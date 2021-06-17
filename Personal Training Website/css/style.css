@@ -1,0 +1,255 @@
+
+body {
+    margin: 0px;
+    font-family: 'Hind Siliguri';
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: -20px;
+}
+
+
+header {
+    background-color: rgb(7, 8, 63);
+    margin: 0px;
+    padding: 0px 0px;
+    width: 100%;
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #707070;
+    
+}
+
+.carousel {
+    max-width: 1000px;
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.carousel .carousel-item img {
+    width: 800px;
+    max-width: 800px;
+    height: auto;
+
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+    text-align: center;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 1s;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.carousel .carousel-actions #carousel-prev {
+    margin-left: 2rem;
+}
+
+.carousel .carousel-actions #carousel-next {
+    margin-right: 2rem;
+}
+
+.carousel .carousel-actions button {
+    border-radius: 20px;
+    border: solid;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+h2 a {
+    color:rgb(7, 8, 63);
+}
+
+h2 a:hover,
+h2 a:focus {
+    color: whitesmoke;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(224, 216, 211);
+    margin: 0px auto;
+    padding: 10px 30px;
+}
+
+
+
+footer {
+
+    background-color: rgb(80, 121, 121);
+    margin: 0px;
+    padding: 20px 30px;
+    color: white;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(5, 3, 3);
+    font-size: 30px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 100px 0px 0px;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.column {
+    list-style: none;
+    margin: auto;
+    width: 30%;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+@media (max-width: 600px) {
+
+    .columns {
+        flex-direction: column;
+       
+        
+    }
+    .col {
+        text-align: center;
+        margin: 0 auto;
+        width: 450px;
+    
+    
+        
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color:darkblue;
+    
+
+}
+
+
+
+#overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.78);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease-in;
+}
+
+#modal {
+    background-color: white;
+    height: 60%;
+    border-radius: 8px;
+    padding: 30px 30px 60px;
+    overflow: hidden;
+}
+
+#overlay.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#close-modal {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+.qualifications-wrapper {
+    width: 100%;
+}
+
+.qualificationpics {
+    width: 300px;
+    object-fit: contain;
+    height: 100%;
+    margin: 0 8px;
+}
+
+.degreenpic {
+    height: auto;
+    width: 450px;
+}
+
+#CPDcourses {
+    margin: 50px auto;
+}
+
+#close-modal {
+    padding: 16px;
+    z-index: 100;
+}
+
+#fitness-profile-homepage-link {
+    margin: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
